@@ -1,0 +1,15 @@
+<div class="container">
+  <video playsinline autoplay muted loop oncanplay="this.play()" onloadedmetadata="this.muted = true" id="myVideo">
+    <source src="../../assets/home.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+    <h1 class="titre">Your place to chat</h1>
+
+  </video>
+
+  <div class="description">
+
+        <p>{{ 'home.message-accueil' | translate }} </p>
+
+      <a routerLink="/auth/signup">{{ 'home.enregistrez-vous' | translate }}</a>
+  </div>
+</div>

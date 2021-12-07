@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/cascadia-code.min.css");
+body{
+    margin: 0;
+    font-family: 'Cascadia Code', sans-serif;
+}
+
+::-webkit-scrollbar{
+  margin-right: 5px;
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: darkgrey;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: whitesmoke;
+}
+
+@media (max-width: 640px) {
+    body{
+        zoom: 0.4;
+    }
+}
