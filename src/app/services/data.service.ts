@@ -9,7 +9,11 @@ export class DataService {
 
   baseUrl: string = 'https://www.scorebat.com/video-api/v1/';
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
+
+  getVideo() {
+    return this.http.get(this.baseUrl);
+  }
 
 //   getContacts(): Observable<Array<Person>> {
 //       return this.http.get<Array<Person>>(this.baseUrl + 'actors');
@@ -18,7 +22,6 @@ export class DataService {
 //   searchContacts(query: string): Observable<Array<Person>> {
 //     return this.http.get<Array<Person>>(this.baseUrl + 'actors?lastName_like='+query);
 // }
-
 //   getContactsFiltered(): Observable<Array<Person>> {
 //     return this.http.get(this.baseUrl + 'actors')
 //     .pipe(
@@ -40,8 +43,8 @@ export class DataService {
 //       this.http.delete(this.baseUrl + 'actors/' + id).subscribe();
 //   }
 
-//   getToken(): string {
-//       return "0123456789";
-//   }
+   getToken(): string {
+       return "0123456789";
+   }
 
 }
