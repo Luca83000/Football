@@ -19,27 +19,7 @@ a {
   text-align: center;
 }
 
-.nav-bar{
-  position: fixed;
-  z-index: 1;
-  background-color: #23272a;
-  height: 100%;
 
-  width: 90px;
-  display: flex;
-  flex-direction: column;
-  padding-top: 20px;
-}
-
-.bot{
-
-  position: absolute;
-  bottom: 5%;
-}
-
-.active, .translated {
-  background-color: #7289da;
-}
 a{
   font-size: 0.7rem;
   cursor: pointer;

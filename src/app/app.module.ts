@@ -11,12 +11,22 @@ import { HomeComponent } from './home/home.component';
 import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
+import { EuropeComponent } from './europe/europe.component';
+import { InternationalComponent } from './international/international.component';
+import { VideoComponent } from './video/video.component';
+import { AboutComponent } from './about/about.component';
+import { SearchComponent } from './search/search.component';
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    EuropeComponent,
+    InternationalComponent,
+    VideoComponent,
+    AboutComponent,
+    SearchComponent,
   ],
   imports: [
     BrowserModule,
